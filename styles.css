@@ -2,6 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   font-size: 16px;
   background-color: #f3f1f1;
@@ -49,6 +53,7 @@ nav ul li {
   padding: 0;
   margin: 0;
 }
+/* INDEX PAGE STYLING */
 
 /* Main Section */
 
@@ -123,4 +128,33 @@ article span {
   height: 50px;
   margin: 0;
   padding: 5px;
+}
+
+/* CERTIFICATION PAGE STYLING */
+
+.cert-main {
+  margin-top: 120px;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: column;
+  margin-top: 2rem;
+  width: 80%;
+}
+.gallery a {
+  display: flex;
+}
+.gallery a img {
+  display: inline-block;
+  min-width: 0;
+  flex: 1 1;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.Codecademy {
+  background-color: white;
+  margin-top: 120px;
+  padding-top: 40px;
+  width: 100%;
 }
