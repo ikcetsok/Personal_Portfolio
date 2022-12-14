@@ -1,0 +1,126 @@
+/* General Styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+  font-size: 16px;
+  background-color: #f3f1f1;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Links  */
+
+.disabledLink {
+  cursor: not-allowed;
+  color: #636363;
+}
+
+/* Navigation Bar */
+
+nav {
+  top: 0;
+  position: fixed;
+  padding: 25px 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #f3f1f1;
+  border-bottom: 1px solid #474747;
+  z-index: 10;
+}
+
+nav h1 {
+  font-family: "Anybody", cursive;
+  font-size: 1.5rem;
+  color: #474747;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main Section */
+
+main {
+  margin-top: 202px;
+}
+
+/* Introduction */
+
+article {
+  margin: auto;
+  width: 80%;
+  padding-left: 2rem;
+}
+
+article h2 {
+  font-size: 1.8rem;
+}
+
+article span {
+  color: #0e7ebd;
+}
+
+/* Courses */
+.cSection {
+  background-color: white;
+  margin-top: 120px;
+  width: 100%;
+}
+
+.courses {
+  padding: 30px 0;
+  background-color: white;
+}
+
+.courses p {
+  color: rgb(121, 121, 121);
+}
+
+.courses h2 {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.courses img {
+  display: inline-block;
+  height: 30px;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.courses ul li {
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.langs {
+  padding: 30px 0;
+  height: 200x;
+}
+
+.langs div {
+  display: flex;
+  align-items: center;
+}
+
+.langs img {
+  display: inline-block;
+  height: 50px;
+  margin: 0;
+  padding: 5px;
+}
