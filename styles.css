@@ -24,9 +24,9 @@ html {
 
 nav {
   top: 0;
+  display: flex;
   position: fixed;
   padding: 25px 5%;
-  display: flex;
   justify-content: space-between;
   width: 90%;
   background-color: #f3f1f1;
@@ -40,19 +40,74 @@ nav h1 {
   color: #474747;
 }
 
-nav ul {
+nav .nav-normal {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 25%;
 }
 
-nav ul li {
+nav .nav-normal li {
   text-decoration: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
+/* Nav bar dropdown */
+
+.dropdown {
+  display: none;
+}
+
+.dropdown .button {
+  z-index: 20;
+  position: fixed;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  font-size: 1.2rem;
+  font-family: "Anybody", cursive;
+  width: 50px;
+  height: 74px;
+  align-items: center;
+}
+
+.button img {
+  display: inline-block;
+  height: 40px;
+}
+
+.dropdown ul {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  z-index: 4;
+  transition: all 400ms ease-out  ;
+}
+
+.dropdown li {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.dropdown:hover ul{
+  top:74px;
+}
+
+
+/* Responsive Nav */
+
+@media only screen and (max-width: 750px) {
+  nav .nav-normal {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+}
+
 /* INDEX PAGE STYLING */
 
 /* Main Section */
