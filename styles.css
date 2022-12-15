@@ -71,6 +71,7 @@ nav .nav-normal li {
   width: 50px;
   height: 74px;
   align-items: center;
+  border-bottom: 1px solid #474747;
 }
 
 .button img {
@@ -89,11 +90,27 @@ nav .nav-normal li {
 .dropdown li {
   padding-top: 0.5rem;
   font-size: 1.5rem;
+  transition: color 400ms linear;
+  
 }
+
+/* Hover pseudo-class */
 
 .dropdown:hover ul{
   top:74px;
+  
 }
+
+.dropdown li a:hover,
+.nav-normal a:hover {
+  color: #0e7ebd;
+}
+
+.dropdown .disabledLink:hover,
+.nav-normal .disabledLink:hover {
+  color: #636363;
+}
+
 
 
 /* Responsive Nav */
