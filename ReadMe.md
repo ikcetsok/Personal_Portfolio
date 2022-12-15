@@ -14,6 +14,10 @@ Project uses:
 - JavaScript
   >**app.js** - simple interactivy
 
+## Add-on to aid responsive design
+
+After width decreases below 750px, navigation bar changes to drop-down menu.
+Drop-down menu uses *css transisions*.
 
 
 
