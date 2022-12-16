@@ -82,23 +82,24 @@ nav .nav-normal li {
 .dropdown ul {
   position: fixed;
   top: 0px;
-  right: 10px;
+  right: 0px;
   z-index: 4;
-  transition: all 400ms ease-out  ;
+  padding: 0px 10px 10px 10px;
+  background-color: #f3f1f1;
+  transition: all 400ms ease-out;
+  border-left: 1px solid black;
 }
 
 .dropdown li {
   padding-top: 0.5rem;
   font-size: 1.5rem;
   transition: color 400ms linear;
-  
 }
 
 /* Hover pseudo-class */
 
-.dropdown:hover ul{
-  top:74px;
-  
+.dropdown:hover ul {
+  top: 74px;
 }
 
 .dropdown li a:hover,
@@ -110,8 +111,6 @@ nav .nav-normal li {
 .nav-normal .disabledLink:hover {
   color: #636363;
 }
-
-
 
 /* Responsive Nav */
 
@@ -185,6 +184,26 @@ article span {
   padding-top: 5px;
 }
 
+/* Interactive Button */
+
+#cert-button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #0e7ebd;
+  color: white;
+  width: 250px;
+  padding: 0.5rem 0;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#cert-button:hover{
+  background-color: rgb(255, 255, 255);
+  color: #0e7ebd;
+}
+
 .langs {
   padding: 30px 0;
   height: 200x;
@@ -192,6 +211,7 @@ article span {
 
 .langs div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
