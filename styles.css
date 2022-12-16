@@ -199,7 +199,7 @@ article span {
   cursor: pointer;
 }
 
-#cert-button:hover{
+#cert-button:hover, #cert-button:active{
   background-color: rgb(255, 255, 255);
   color: #0e7ebd;
 }
