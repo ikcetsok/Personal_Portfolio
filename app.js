@@ -24,6 +24,7 @@ complete.innerHTML = " - Complete";
 const resetter = (e) => {
   button.removeEventListener("click", resetter);
   button.addEventListener("click", buttonSwitch);
+  button.innerHTML='Click to see Finished Courses';
   courseTitle.parentNode.removeChild(certLink);
   document.getElementById("CAFE").hidden = false;
   document.getElementById("FCRWD").removeChild(document.getElementById("FCRWD").lastChild);
