@@ -19,5 +19,11 @@ Project uses:
 After width decreases below 750px, navigation bar changes to drop-down menu.
 Drop-down menu uses *css transisions*.
 
+## Add-on JavaScript button to show completed courses
 
+After clicking on button in Certification Courses the js script will:
+- Hide unfinished courses and add *- Complete* to completed courses.
+- Add link to certification page
+
+Clicking the button again reverts changes made.
 
